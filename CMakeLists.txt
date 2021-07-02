@@ -3,9 +3,8 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("rogue")
+project("jekh")
 
 # Include sub-projects.
-add_subdirectory ("rogue")
-set_property(TARGET "rogue" PROPERTY CXX_STANDARD 17)
-add_compile_options("-Wall; -Wextra; -pedantic")
+add_subdirectory ("src")
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
